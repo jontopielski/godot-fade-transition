@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://apple_kid.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = SubResource( 1 )
+
+[node name="SceneOne" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 320, 180 )
+color = Color( 0.188235, 0.129412, 0.909804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 116.0
+margin_top = 77.0
+margin_right = 204.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 2 )
+text = "Scene One"
